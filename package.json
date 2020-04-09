@@ -1,0 +1,26 @@
+{
+  "name": "projectpotigol",
+  "version": "1.0.0",
+  "description": "potigol create site",
+  "main": "sass/mystyles.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirwez/potigol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sirwez/potigol/issues"
+  },
+  "homepage": "https://github.com/sirwez/potigol#readme",
+  "devDependencies": {
+    "bulma": "^0.8.1",
+    "node-sass": "^4.13.1"
+  }
+}
