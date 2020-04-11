@@ -2,122 +2,120 @@
 <html lang="en-US">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Potigol</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Potigol</title>
 
-    <link rel="icon" href="/assets/potigol.ico">
-    
-    <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="../css/new/fontello.css?v=daf">
-    <link rel="stylesheet" href="../css/mystyles.css">
-    
+	<link rel="icon" href="/assets/potigol.ico">
+
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="stylesheet" href="../css/new/fontello.css?v=daf">
+	<link rel="stylesheet" href="../css/mystyles.css">
 
 
-    
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
 
 </head>
 
 <body class="has-navbar-fixed-top landing">
 
-    <nav class="navbar is-fixed-top has-shadow is-dark" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="/">
-                    <img src="../assets/potigol.png" style="height:38px;" alt="Potigol logo" />
+	<nav class="navbar is-fixed-top has-shadow is-dark" role="navigation" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<img src="../assets/potigol.png" style="height:38px;" alt="Potigol logo" />
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-                    data-target="bulma-navbar-menu">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+						data-target="bulma-navbar-menu">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+			</div>
 
-            <div id="bulma-navbar-menu" class="navbar-menu">
-                <div class="navbar-start">
-                    <a class="navbar-item" href="/#how-it-works" data-section="how-it-works">Início</a>
-                    <a class="navbar-item" href="/#features" data-section="features">Documentação</a>
-                    <a class="navbar-item" href="/#purchase" data-section="purchase">Sobre</a>
-                </div>
+			<div id="bulma-navbar-menu" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" href="/#how-it-works" data-section="how-it-works">Início</a>
+					<a class="navbar-item" href="/#features" data-section="features">Documentação</a>
+					<a class="navbar-item" href="/#purchase" data-section="purchase">Sobre</a>
+				</div>
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="buttons">
-                            <a href="/editor?project=1ac99c6da0a46a17d7163237c5bff0eea106ea0a"
-                                class="button is-warning">
-                                <strong>Download</strong>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
+				<div class="navbar-end">
+					<div class="navbar-item">
+						<div class="buttons">
+							<a href="/editor?project=1ac99c6da0a46a17d7163237c5bff0eea106ea0a"
+								class="button is-warning">
+								<strong>Download</strong>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
 
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <a href="">&larr; all Bulma classes list</a>
+	<section class="section">
+		<div class="container">
+			<div class="columns">
+				<div class="column">
 
- 
-                        <h1 class="title is-2">Bulma class: <strong>.navbar.is-black</strong></h1>
-
+					<h1 class="title is-2">Potigol é...</h1>
+                    <h1 class="subtitle is-6 is-italic">Uma linguagem moderna (funcional) para aprender a programar.</h3>
 
 
-                    <div class="block">
-                       
-                            <pre><code class="language-elixir" data-lang="elixir"><span class="n">current_process</span> <span class="o">=</span> <span class="n">self</span><span class="p">()</span>
+					<div class="">
+                    <p class="has-text-weight-light">Exemplo de código:</p>
+						<pre><code class="language-elixir" data-lang="elixir">
+        <span class="k">tipo</span> Quadrado
+            lado: Real
+            area() = lado * lado
+            perimetro() = 4 * lado
+        <span class="k">fim</span>
 
-                                <span class="c1"># Spawn an Elixir process (not an operating system one!)</span>
-                                <span class="n">spawn_link</span><span class="p">(</span><span class="k">fn</span> <span class="o">-&gt;</span>
-                                  <span class="n">send</span><span class="p">(</span><span class="n">current_process</span><span class="p">,</span> <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="s2">"hello world"</span><span class="p">})</span>
-                                <span class="k">end</span><span class="p">)</span>
-                                
-                                <span class="c1"># Block until the message is received</span>
-                                <span class="k">receive</span> <span class="k">do</span>
-                                  <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="n">contents</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
-                                <span class="k">end</span></code></pre>
-                 
-                    </div>
+        <span class="nv">q1</span> <span class="o">=</span> Quadrado(10)
+        <span class="nc">escreva</span> <span class="nv">q1</span>.area
+        <span class="nc">escreva</span> <span class="nv">q1</span>.perimetro
+                            </code></pre>
 
-                </div>
-                <div class="column is-3 is-hidden-mobile">
-                    <div class="columns ">
-                        <div class="column ">
-                            <div class="card has-text-centered">
-                                <a class="twitter-timeline" data-height="400"
-                                    href="https://twitter.com/potigol?ref_src=twsrc%5Etfw">Tweets by potigol</a>
-                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                                <div class="card-content">
-                                    <div class="content">
-                                        <p class="block has-text-center is-size-6">CANAIS OFICIAIS</p>
-                                        <a class="panel-block is-active" href="https://twitter.com/WezFer"
-                                            target="_blank">
-                                            <span class="panel-icon">
+					</div>
+
+				</div>
+				<div class="column is-3 is-hidden-mobile">
+					<div class="columns ">
+						<div class="column ">
+							<div class="card has-text-centered">
+								<a class="twitter-timeline" data-height="400"
+									href="https://twitter.com/potigol?ref_src=twsrc%5Etfw">Tweets by potigol</a>
+								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+								<div class="card-content">
+									<div class="content">
+										<p class="block has-text-center is-size-6">CANAIS OFICIAIS</p>
+										<a class="panel-block is-active" href="https://twitter.com/WezFer"
+											target="_blank">
+											<span class="panel-icon">
                                                 <i class="fab fa-twitter" aria-hidden="true"></i>
                                             </span>
-                                            Twitter
-                                        </a>
-                                        <a class="panel-block" href="https://github.com/sirwez" target="_blank">
-                                            <span class="panel-icon">
+											Twitter
+										</a>
+										<a class="panel-block" href="https://github.com/sirwez" target="_blank">
+											<span class="panel-icon">
                                                 <i class="fab fa-github" aria-hidden="true"></i>
                                             </span>
-                                            Github
-                                        </a>
-                                    </div>
+											Github
+										</a>
+									</div>
 
-                                </div>
-                            </div>
-                        </div>
-    </section>
+								</div>
+							</div>
+						</div>
+	</section>
 
-    <script src="../js/bundle.js"></script>
-    <script src="../js/landing.5538d53f.js"></script>
+	<script src="../js/bundle.js"></script>
+	<script src="../js/landing.5538d53f.js"></script>
 </body>
 
 </html>
