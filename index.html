@@ -7,25 +7,20 @@
     <title>Potigol</title>
 
     <link rel="icon" href="/assets/potigol.ico">
-
-    <link rel="stylesheet" href="../css/new/bulma.8ad5df9d.css">
+    
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="../css/new/fontello.css?v=daf">
     <link rel="stylesheet" href="../css/mystyles.css">
+    
 
-    <link rel="stylesheet" href="../css/new/prism.css?v=1">
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125842727-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-125842727-4');
-    </script>
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
 
 </head>
 
 <body class="has-navbar-fixed-top landing">
-
 
     <nav class="navbar is-fixed-top has-shadow is-dark" role="navigation" aria-label="main navigation">
         <div class="container">
@@ -67,79 +62,29 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <div class="">
-                        <a href="/classes">&larr; all Bulma classes list</a>
+                    <a href="">&larr; all Bulma classes list</a>
 
-                        <div class="block">
-                            <h1 class="title is-2">Bulma class: <strong>.navbar.is-black</strong></h1>
-                        </div>
-                        <p class="subtitle"></p>
+ 
+                        <h1 class="title is-2">Bulma class: <strong>.navbar.is-black</strong></h1>
 
-                        <div class="block" id="prism">
-                            <div class="content">
-                                <pre><code class="language-html">&lt;nav class=&quot;navbar is-black&quot; role=&quot;navigation&quot; aria-label=&quot;main navigation&quot;&gt;
-&lt;div class=&quot;navbar-brand&quot;&gt;
-&lt;a class=&quot;navbar-item&quot; href=&quot;https://bulma.io&quot;&gt;
-&lt;img src=&quot;https://bulma.io/images/bulma-logo.png&quot; width=&quot;112&quot; height=&quot;28&quot;&gt;
-&lt;/a&gt;
 
-&lt;a role=&quot;button&quot; class=&quot;navbar-burger burger&quot; aria-label=&quot;menu&quot; aria-expanded=&quot;false&quot; data-target=&quot;navbarBasicExample&quot;&gt;
-&lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-&lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-&lt;span aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
-&lt;/a&gt;
-&lt;/div&gt;
 
-&lt;div id=&quot;navbarBasicExample&quot; class=&quot;navbar-menu&quot;&gt;
-&lt;div class=&quot;navbar-start&quot;&gt;
-&lt;a class=&quot;navbar-item&quot;&gt;
-Home
-&lt;/a&gt;
+                    <div class="block">
+                       
+                            <pre><code class="language-elixir" data-lang="elixir"><span class="n">current_process</span> <span class="o">=</span> <span class="n">self</span><span class="p">()</span>
 
-&lt;a class=&quot;navbar-item&quot;&gt;
-Documentation
-&lt;/a&gt;
-
-&lt;div class=&quot;navbar-item has-dropdown is-hoverable&quot;&gt;
-&lt;a class=&quot;navbar-link&quot;&gt;
-  More
-&lt;/a&gt;
-
-&lt;div class=&quot;navbar-dropdown&quot;&gt;
-  &lt;a class=&quot;navbar-item&quot;&gt;
-    About
-  &lt;/a&gt;
-  &lt;a class=&quot;navbar-item&quot;&gt;
-    Jobs
-  &lt;/a&gt;
-  &lt;a class=&quot;navbar-item&quot;&gt;
-    Contact
-  &lt;/a&gt;
-  &lt;hr class=&quot;navbar-divider&quot;&gt;
-  &lt;a class=&quot;navbar-item&quot;&gt;
-    Report an issue
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;navbar-end&quot;&gt;
-&lt;div class=&quot;navbar-item&quot;&gt;
-&lt;div class=&quot;buttons&quot;&gt;
-  &lt;a class=&quot;button is-primary&quot;&gt;
-    &lt;strong&gt;Sign up&lt;/strong&gt;
-  &lt;/a&gt;
-  &lt;a class=&quot;button is-light&quot;&gt;
-    Log in
-  &lt;/a&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/nav&gt;</code></pre>
-                            </div>
-                        </div>
+                                <span class="c1"># Spawn an Elixir process (not an operating system one!)</span>
+                                <span class="n">spawn_link</span><span class="p">(</span><span class="k">fn</span> <span class="o">-&gt;</span>
+                                  <span class="n">send</span><span class="p">(</span><span class="n">current_process</span><span class="p">,</span> <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="s2">"hello world"</span><span class="p">})</span>
+                                <span class="k">end</span><span class="p">)</span>
+                                
+                                <span class="c1"># Block until the message is received</span>
+                                <span class="k">receive</span> <span class="k">do</span>
+                                  <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="n">contents</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+                                <span class="k">end</span></code></pre>
+                 
                     </div>
+
                 </div>
                 <div class="column is-3 is-hidden-mobile">
                     <div class="columns ">
@@ -149,69 +94,30 @@ Documentation
                                     href="https://twitter.com/potigol?ref_src=twsrc%5Etfw">Tweets by potigol</a>
                                 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                                 <div class="card-content">
-                                    <p class="subtitle is-4">Create Bulma templates in&nbsp;minutes.</p>
-                                    <div class="buttons">
-                                        <a href="/editor?project=1ac99c6da0a46a17d7163237c5bff0eea106ea0a"
-                                            class="button is-primary is-fullwidth outbound-timeout-link"
-                                            data-link="classes-list"><strong>Try Demo</strong></a>
+                                    <div class="content">
+                                        <p class="block has-text-center is-size-6">CANAIS OFICIAIS</p>
+                                        <a class="panel-block is-active" href="https://twitter.com/WezFer"
+                                            target="_blank">
+                                            <span class="panel-icon">
+                                                <i class="fab fa-twitter" aria-hidden="true"></i>
+                                            </span>
+                                            Twitter
+                                        </a>
+                                        <a class="panel-block" href="https://github.com/sirwez" target="_blank">
+                                            <span class="panel-icon">
+                                                <i class="fab fa-github" aria-hidden="true"></i>
+                                            </span>
+                                            Github
+                                        </a>
                                     </div>
-                                    <div class="block has-text-center is-size-7">
-                                        * All Bulma Builder users automatically get access to&nbsp;<a
-                                            href="https://bootstrapshuffle.com" target="_blank">Bootstrap&nbsp;Shuffle</a>
-                                        and&nbsp;<a href="https://tailwind.build" target="_blank">Tailwind&nbsp;Builder</a>
-                                        for&nbsp;FREE.
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
     </section>
 
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <a href="/">
-                <img src="/static/img/logos/bulma-builder-logo_76px.png?v=1" alt="Bulma Builder logo"
-                    style="height:38px;">
-            </a>
-
-            <div class="footer-links">
-                <a href="/bulma/static/files/terms-of-use.pdf" class="button is-text" target="_blank"
-                    rel="noopener">Terms</a>
-                <a href="/bulma/static/files/privacy-policy.pdf" class="button is-text" target="_blank"
-                    rel="noopener">Privacy Policy</a>
-                <a href="/classes" class="button is-text">Bulma CSS</a>
-                <a href="/cdn-cgi/l/email-protection#f784828787988583b7849f8291919b92d9939281"
-                    class="button is-text">Support</a>
-            </div>
-
-            <p>
-                &copy; 2020 Bulma Builder. All rights reserved.
-            </p>
-            <small>Visual Editor powered by <a href="https://shuffle.dev" title="Visual Editor as a Service"
-                    target="_blank">Shuffle.dev</a>.</small>
-
-        </div>
-    </footer>
-
-    <script data-cfasync="false" src="../js/email-decode.min.js"></script>
     <script src="../js/bundle.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
-    <script>
-        var stripe_publishable_key = 'pk_live_6Hm65VjiTzGXnnoyU9jddNmf';
-    </script>
-
-    <script>
-        var SHOW_NEWSLETTER = false;
-        var ANIMATION_TIME = 1250;
-        var AUTOPLAY_INTERVAL_TIME = 2500;
-    </script>
-    <script src="../js/prism.js?v=1"></script>
     <script src="../js/landing.5538d53f.js"></script>
-    <script src="../js/29e6_components-previews.js?v=cai"></script>
-    <script>
-        $('[data-toggle="tooltip"]').tooltip();
-        $('[data-toggle="popover"]').popover();
-    </script>
-
 </body>
 
 </html>

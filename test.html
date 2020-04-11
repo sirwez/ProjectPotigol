@@ -7,26 +7,20 @@
     <title>Potigol</title>
 
     <link rel="icon" href="/assets/potigol.ico">
-
-    <link rel="stylesheet" href="../css/new/bulma.8ad5df9d.css">
+    
+    <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="../css/new/fontello.css?v=daf">
     <link rel="stylesheet" href="../css/mystyles.css">
-    <link rel="stylesheet" href="../css/syntax.css">
+    
 
-    <link rel="stylesheet" href="../css/new/prism.css?v=1">
+
+    
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125842727-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'UA-125842727-4');
-    </script>
+
 
 </head>
 
 <body class="has-navbar-fixed-top landing">
-
 
     <nav class="navbar is-fixed-top has-shadow is-dark" role="navigation" aria-label="main navigation">
         <div class="container">
@@ -68,30 +62,29 @@
         <div class="container">
             <div class="columns">
                 <div class="column">
-                    <div class="">
-                        <a href="/classes">&larr; all Bulma classes list</a>
+                    <a href="">&larr; all Bulma classes list</a>
 
-                        <div class="block">
-                            <h1 class="title is-2">Bulma class: <strong>.navbar.is-black</strong></h1>
-                        </div>
-                        <p class="subtitle"></p>
+ 
+                        <h1 class="title is-2">Bulma class: <strong>.navbar.is-black</strong></h1>
 
-                        <div class="block" id="prism">
-                            <div class="content is-left">
-                                <figure class="highlight"><pre><code class="language-elixir" data-lang="elixir"><span class="n">current_process</span> <span class="o">=</span> <span class="n">self</span><span class="p">()</span>
 
-                                    <span class="c1"># Spawn an Elixir process (not an operating system one!)</span>
-                                    <span class="n">spawn_link</span><span class="p">(</span><span class="k">fn</span> <span class="o">-&gt;</span>
-                                      <span class="n">send</span><span class="p">(</span><span class="n">current_process</span><span class="p">,</span> <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="s2">"hello world"</span><span class="p">})</span>
-                                    <span class="k">end</span><span class="p">)</span>
-                                    
-                                    <span class="c1"># Block until the message is received</span>
-                                    <span class="k">receive</span> <span class="k">do</span>
-                                      <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="n">contents</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
-                                    <span class="k">end</span></code></pre></figure>
-                            </div>
-                        </div>
+
+                    <div class="block">
+                       
+                            <pre><code class="language-elixir" data-lang="elixir"><span class="n">current_process</span> <span class="o">=</span> <span class="n">self</span><span class="p">()</span>
+
+                                <span class="c1"># Spawn an Elixir process (not an operating system one!)</span>
+                                <span class="n">spawn_link</span><span class="p">(</span><span class="k">fn</span> <span class="o">-&gt;</span>
+                                  <span class="n">send</span><span class="p">(</span><span class="n">current_process</span><span class="p">,</span> <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="s2">"hello world"</span><span class="p">})</span>
+                                <span class="k">end</span><span class="p">)</span>
+                                
+                                <span class="c1"># Block until the message is received</span>
+                                <span class="k">receive</span> <span class="k">do</span>
+                                  <span class="p">{</span><span class="ss">:msg</span><span class="p">,</span> <span class="n">contents</span><span class="p">}</span> <span class="o">-&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span><span class="p">(</span><span class="n">contents</span><span class="p">)</span>
+                                <span class="k">end</span></code></pre>
+                 
                     </div>
+
                 </div>
                 <div class="column is-3 is-hidden-mobile">
                     <div class="columns ">
