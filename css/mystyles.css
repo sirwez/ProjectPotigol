@@ -288,11 +288,7 @@ select,
 textarea {
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-code,
-pre {
-  -moz-osx-font-smoothing: auto;
-  -webkit-font-smoothing: auto;
-  font-family: monospace; }
+
 
 body {
   color: #4a4a4a;
@@ -309,12 +305,7 @@ a {
   a:hover {
     color: #363636; }
 
-code {
-  background-color: whitesmoke;
-  color: #f14668;
-  font-size: 0.875em;
-  font-weight: normal;
-  padding: 0.25em 0.5em 0.25em; }
+
 
 hr {
   background-color: whitesmoke;
@@ -345,20 +336,7 @@ strong {
 fieldset {
   border: none; }
 
-pre {
-  -webkit-overflow-scrolling: touch;
-  background-color: whitesmoke;
-  color: #4a4a4a;
-  font-size: 0.875em;
-  overflow-x: auto;
-  padding: 1.25rem 1.5rem;
-  white-space: pre;
-  word-wrap: normal; }
-  pre code {
-    background-color: transparent;
-    color: currentColor;
-    font-size: 1em;
-    padding: 0; }
+
 
 table td,
 table th {
