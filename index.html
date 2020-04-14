@@ -36,15 +36,14 @@
 			<div id="bulma-navbar-menu" class="navbar-menu">
 				<div class="navbar-start">
 					<a class="navbar-item" href="/index.html" data-section="how-it-works">Início</a>
-					<a class="navbar-item" href="/#features" data-section="features">Documentação</a>
-					<a class="navbar-item" href="/#purchase" data-section="purchase">Bibliotecas</a>
+					<a class="navbar-item" href="/doc.html" data-section="features">Documentação</a>
+					<a class="navbar-item" href="/lib.html" data-section="purchase">Bibliotecas</a>
 				</div>
 
 				<div class="navbar-end">
 					<div class="navbar-item">
 						<div class="buttons">
-							<a href="/test.html"
-								class="button is-warning">
+							<a href="/download.html" class="button is-warning">
 								<strong>Download</strong>
 							</a>
 						</div>
@@ -60,12 +59,15 @@
 				<div class="column">
 
 					<h1 class="title is-2">Potigol é...</h1>
-                    <h1 class="subtitle is-6 is-italic">Uma linguagem moderna (funcional) para aprender a programar.</h3>
+					<h1 class="subtitle is-6 is-italic">Uma linguagem moderna (funcional) para aprender a programar.
+						</h3>
 
+						<br>
+						<div class="">
+							<p class="has-text-weight-light">Exemplo de código:</p>
+							<pre><code class="language-elixir" data-lang="elixir"> <!--Example code potigol-->
+<span class="c">  #programa para calcular área e perímetro de um quadrado</span>
 
-					<div class="">
-                    <p class="has-text-weight-light">Exemplo de código:</p>
-						<pre><code class="language-elixir" data-lang="elixir"> <!--Example code potigol-->
 
         <span class="k">tipo</span> Quadrado
             lado: Real
@@ -76,83 +78,57 @@
         <span class="nv">q1</span> <span class="o">=</span> Quadrado(10)
         <span class="nc">escreva</span> <span class="nv">q1</span>.area
         <span class="nc">escreva</span> <span class="nv">q1</span>.perimetro
-
                             </code></pre>
 
-					</div>
-                    <br>
-                            <div class="container">
-          <h2 class="title has-left">Videoaulas e Tutoriais</h2>
-          <div class="columns">
-            <div class="column">
-              <div class="card" style="height: 100%">
-                <div class="card-image"><a href="#"><img src="../assets/ubuntu.jpg" alt="Ubuntu"></a></div>
-                <div class="card-content"><span class="is-size-7">25 Jun 2019</span>
-                  <h5 class="title is-5"><a href="https://youtu.be/YjuBqlfkm_4">Instalando o Potigol no Ubuntu</a></h5><a class="button is-warning" href="https://youtu.be/YjuBqlfkm_4">Assista</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" style="height: 100%">
-                <div class="card-image"><a href="#"><img src="../assets/jogo-aula.jpg" alt="Jogo da Forca"></a></div>
-                <div class="card-content"><span class="is-size-7">25 Jun 2019</span>
-                  <h5 class="title is-5"><a href="https://youtu.be/0UgO1FppF6M">Jogo 2D com Potigol #Part01</a></h5><a class="button is-warning" href="https://youtu.be/0UgO1FppF6M">Assista</a>
-                </div>
-              </div>
-            </div>
-            <div class="column">
-              <div class="card" style="height: 100%">
-                <div class="card-image is-128x128"><a href="https://github.com/potigol/livro"><img src="../assets/livro.jpg" alt=""></a></div>
-                <div class="card-content"><span class="is-size-7">25 Jun 2019</span>
-                  <h5 class="title is-5"><a href="https://github.com/potigol/livro">Livro "Potigol: Programação para Todos"</a></h5><a class="button is-warning" href="https://github.com/potigol/livro">Leia</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="has-text-centered">
-          <h2 class="title">Quer saber mais sobre a linguagem?</h2>
-          <div class="columns">
-            <div class="column">
-              <div class="level">
-                <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="../assets/gitpod.png" alt=""></figure>
-                </div>
-              </div>
-              <p class="block"> <strong>Gitpod</strong>  é uma IDE online para GitHub e GitLab que lança ambientes de desenvolvimento prontos para codificar para qualquer projeto com um único clique. Acesse o ambiente pré-configurado para resolução de questões do <strong> <a href="https://www.urionlinejudge.com.br/" target="_blank" rel="noopener noreferrer">URI Online Judge</a> </strong> totalmente na linguagem Potigol. </p>
-              <h5 class="title is-5"><a href="https://gitpod.io/#https://github.com/potigol/gitpod" target="_blank" rel="noopener noreferrer">Gitpod</a></h5>
-              <p class="subtitle">IDE Online</p>
-            </div>
-            <div class="column">
-              <div class="level">
-                <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="/assets/atom.png" alt=" Atom - Editor de Texto"></figure>
-                </div>
-              </div>
-              <p class="block">Atom é um editor de texto de código aberto disponível para as plataformas Linux, macOS e Microsoft Windows, desenvolvido pelo GitHub sob a licença MIT. O Editor oferece suporte para diversas linguagens, incluindo Potigol.</p>
-              <h5 class="title is-5"><a href="https://atom.io/packages/language-potigol" target="_blank" rel="noopener noreferrer">Atom</a></h5>
-              <p class="subtitle">IDE</p>
-            </div>
-            <div class="column">
-              <div class="level">
-                <div class="level-item">
-                  <figure class="image is-128x128"><img class="is-rounded" src="/assets/jogo.png" alt="Jogos Potigol"></figure>
-                </div>
-              </div>
-              <p class="block">Além de ser uma linguagem de funcional de fácil aprendizado, Potigol também pode ser utilizada para criação de jogos, na Wiki da linguagem já existem alguns exemplos de alguns minigames criados como o clássico Jogo da Velha e um jogo de adivinhação de números, no nosso canal do <a href="https://www.youtube.com/channel/UC_2Rh88JaSiwoYRAr0Na2Jg" target="_blank"> Youtube </a> também temos uns jogos 2D desenvolvidos.</p>
-              <h5 class="title is-5"><a href="https://github.com/potigol/Potigol/wiki/jogos" target="_blank" rel="noopener noreferrer">Jogos</a></h5>
-              <p class="subtitle">Wiki</p>
-            </div>
-          </div>
-        </div>
-  
-				</div>
-				<div class="column is-3 is-hidden-mobile">
+						</div>
+						<br>
+						<div class="container">
+							<h2 class="title has-left">Videoaulas e Tutoriais</h2>
+							<div class="columns">
+								<div class="column">
+									<div class="card" style="height: 100%">
+										<div class="card-image"><a
+												href="#"><img src="../assets/ubuntu.jpg" alt="Ubuntu"></a></div>
+										<div class="card-content"><span class="is-size-7">25 Jun 2019</span>
+											<h5 class="title is-5"><a href="https://youtu.be/YjuBqlfkm_4">Instalando o
+													Potigol no Ubuntu</a></h5><a class="button is-warning"
+												href="https://youtu.be/YjuBqlfkm_4">Assista</a>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="card" style="height: 100%">
+										<div class="card-image"><a
+												href="#"><img src="../assets/jogo-aula.jpg" alt="Jogo da Forca"></a>
+										</div>
+										<div class="card-content"><span class="is-size-7">25 Jun 2019</span>
+											<h5 class="title is-5"><a href="https://youtu.be/0UgO1FppF6M">Jogo 2D com
+													Potigol #Part01</a></h5><a class="button is-warning"
+												href="https://youtu.be/0UgO1FppF6M">Assista</a>
+										</div>
+									</div>
+								</div>
+								<div class="column">
+									<div class="card" style="height: 100%">
+										<div class="card-image is-128x128"><a
+												href="https://github.com/potigol/livro"><img src="../assets/livro.jpg" alt=""></a>
+										</div>
+										<div class="card-content"><span class="is-size-7">25 Jun 2019</span>
+											<h5 class="title is-5"><a href="https://github.com/potigol/livro">Livro
+													"Potigol: Programação para Todos"</a></h5><a
+												class="button is-warning"
+												href="https://github.com/potigol/livro">Leia</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+			</div>
+				<div class="column block is-3 is-hidden-mobile">
 					<div class="columns ">
 						<div class="column ">
 							<div class="card has-text-centered">
-								<a class="twitter-timeline" data-height="400"
+								<a class="twitter-timeline" data-height="655"
 									href="https://twitter.com/potigol?ref_src=twsrc%5Etfw">Tweets by potigol</a>
 								<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 								<div class="card-content">
@@ -171,7 +147,9 @@
                                             </span>
 											Github
 										</a>
-                                        <a class="panel-block" href="https://www.youtube.com/channel/UC_2Rh88JaSiwoYRAr0Na2Jg" target="_blank">
+										<a class="panel-block"
+											href="https://www.youtube.com/channel/UC_2Rh88JaSiwoYRAr0Na2Jg"
+											target="_blank">
 											<span class="panel-icon">
                                                 <i class="fab fa-youtube" aria-hidden="true"></i>
                                             </span>
@@ -183,7 +161,102 @@
 							</div>
 						</div>
 	</section>
-
+    <section class="section">
+    						<div class="container">
+							<h2 class="title has-text-centered" data-config-id="header">Features</h2>
+							<div class="card has-shadow">
+								<div class="columns" data-config-id="features_01">
+									<div class="column">
+										<p class="subtitle is-6">Sintaxe simples</p>
+									</div>
+									<div class="column ">
+										<p class="subtitle is-6">Palavras-chave em português</p>
+									</div>
+									<div class="column">
+										<p class="subtitle is-6">Tipagem estática e forte</p>
+									</div>
+								</div>
+								<div class="columns" data-config-id="features_01">
+									<div class="column">
+										<p class="subtitle is-6">Multiparadigma</p>
+									</div>
+									<div class="column">
+										<p class="subtitle is-6">Inferência de tipos</p>
+									</div>
+									<div class="column">
+										<p class="subtitle is-6">Encoraja a programação funcional</p>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <br>
+                        <br>
+                        <br>
+    <div class="has-text-centered">
+							<h2 class="title">Quer saber mais sobre a linguagem?</h2>
+							<div class="columns">
+								<div class="column">
+									<div class="level">
+										<div class="level-item">
+											<figure class="image is-128x128">
+												<img class="is-rounded" src="../assets/gitpod.png" alt=""></figure>
+										</div>
+									</div>
+									<p class="block"> <strong>Gitpod</strong> é uma IDE online para GitHub e GitLab que
+										lança ambientes de desenvolvimento prontos para codificar para qualquer projeto
+										com um único clique. Acesse o ambiente pré-configurado para resolução de
+										questões do
+										<strong> <a href="https://www.urionlinejudge.com.br/" target="_blank" rel="noopener noreferrer">URI Online Judge</a> </strong>
+										totalmente na linguagem Potigol. </p>
+									<h5 class="title is-5"><a
+											href="https://gitpod.io/#https://github.com/potigol/gitpod" target="_blank"
+											rel="noopener noreferrer">Gitpod</a></h5>
+									<p class="subtitle">IDE Online</p>
+								</div>
+								<div class="column">
+									<div class="level">
+										<div class="level-item">
+											<figure class="image is-128x128">
+												<img class="is-rounded" src="/assets/atom.png" alt=" Atom - Editor de Texto"></figure>
+										</div>
+									</div>
+									<p class="block">Atom é um editor de texto de código aberto disponível para as
+										plataformas Linux, macOS e Microsoft Windows, desenvolvido pelo GitHub sob a
+										licença MIT. O Editor oferece suporte para diversas linguagens, incluindo
+										Potigol.</p>
+									<h5 class="title is-5"><a href="https://atom.io/packages/language-potigol"
+											target="_blank" rel="noopener noreferrer">Atom</a></h5>
+									<p class="subtitle">IDE</p>
+								</div>
+								<div class="column">
+									<div class="level">
+										<div class="level-item">
+											<figure class="image is-128x128">
+												<img class="is-rounded" src="/assets/jogo.png" alt="Jogos Potigol"></figure>
+										</div>
+									</div>
+									<p class="block">Além de ser uma linguagem de funcional de fácil aprendizado,
+										Potigol também pode ser utilizada para criação de jogos, na Wiki da linguagem já
+										existem alguns exemplos de alguns minigames criados como o clássico Jogo da
+										Velha e um jogo de adivinhação de números, no nosso canal do <a
+											href="https://www.youtube.com/channel/UC_2Rh88JaSiwoYRAr0Na2Jg"
+											target="_blank"> Youtube </a> também temos uns jogos 2D desenvolvidos.</p>
+									<h5 class="title is-5"><a href="https://github.com/potigol/Potigol/wiki/jogos"
+											target="_blank" rel="noopener noreferrer">Jogos</a></h5>
+									<p class="subtitle">Wiki</p>
+								</div>
+							</div>
+						</div>
+    </section>
+	<footer class="footer">
+		<div class="container has-text-centered">
+			<a href="/index.html">Inicio</a>
+|
+			<a href="https://github.com/potigol/Potigol/releases">Support</a>
+			<p class="subtitle has-text-centered is-6" data-config-id="copyright">&copy; 2020 Potigol. All right
+				reserved.</p>
+		</div>
+	</footer>
 	<script src="../js/bundle.js"></script>
 	<script src="../js/landing.5538d53f.js"></script>
 </body>
