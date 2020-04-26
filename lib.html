@@ -19,6 +19,10 @@
 			margin-top: 100px;
 			margin-right: -150px;
 		}
+
+		.border {
+			border: solid 0px 0px 1px 0px;
+		}
 	</style>
 </head>
 
@@ -29,7 +33,7 @@
 			<div class="navbar-brand">
 				<a class="navbar-item" href="index.html">
 					<img src="assets/potigol.png" style="height:38px;" alt="Potigol logo" />
-    </a>
+                </a>
 					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
 						data-target="bulma-navbar-menu">
 						<span aria-hidden="true"></span>
@@ -62,38 +66,101 @@
 		<div class="container">
 			<div class="columns">
 				<div class="column">
-
 					<h1 class="subtitle is-5 is-italic has-text-centered">Bibliotecas para facilitarem ainda mais seu
 						desenvolvimento com Potigol.</h1>
 					<br>
-					<h1 class="title is-2">Jerimum</h1>
-
-					<br>
+					<h1 class="title is-1">Jerimum</h1>
 					<div class="">
-						<p class="has-text-weight-light">Para usar a biblioteca Jerimum comece o programa com a instrução use "jerimum":</p>
+						<p class="has-text-weight-light">Para usar a biblioteca Jerimum comece o programa com a
+							instrução
+							<strong>use "jerimum"</strong>:</p>
 						<br>
-                        <pre><code class="language-elixir" data-lang="elixir"> <!--Example code potigol-->
-use "jerimum"
+						<pre>
+                            <code class="language-elixir" data-lang="elixir"> <!--Example code potigol-->
+    use "jerimum"
 
-atualize()
-  # Código para atualizar o jogo
-fim
+    atualize()
+          # Código para atualizar o jogo
+    fim
 
-desenhe()
-  # código para desenhar o jogo
-fim
+    desenhe()
+          # código para desenhar o jogo
+    fim
 
-jogo.iniciar("Título", 640, 480, atualize, desenhe, 60)
-                            </code></pre>
+    jogo.iniciar("Título", 640, 480, atualize, desenhe, 60)
+                            </code>
+                        </pre>
 					</div>
+					<br>
+                    <!--Doc-->
+					<div>
+						<h1 class="title is-2">Jogo</h1>
+
+						<div>
+							<h1 class="subtitle is-5 has-text-weight-light">ATRIBUTOS:</h1>
+							<p><strong class="is-uppercase">largura: Inteiro</strong><br>
+								<span class="cm">&nbsp Largura da janela do jogo (em pixels)</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">x = jogo.largura</strong>.
+							</p>
+							<br>
+							<p><strong class="is-uppercase">altura: Inteiro</strong><br>
+								<span class="cm">&nbsp Altura da janela do jogo (em pixels)</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">y = jogo.largura</strong>.
+							</p>
+							<br>
+							<p><strong class="is-uppercase">título: Texto</strong><br>
+								<span class="cm">&nbsp Texto que aparece na barra de título da janela</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">s = jogo.título</strong>.
+							</p>
+							<br>
+							<p><strong class="is-uppercase">fps: Inteiro</strong><br>
+								<span class="cm">&nbsp Taxa de atualização do jogo em quadros por segundo</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">a = jogo.fps</strong>.
+							</p>
+						</div>
+						<br>
+						<div>
+							<h1 class="subtitle is-5 has-text-weight-light">MÉTODOS:</h1>
+
+							<p><strong class="is-lowercase">iniciar(titulo: Texto, largura: Inteiro, altura: Inteiro, atualize, desenhe, fps: Inteiro = 60)</strong><br>
+								<span class="cm">&nbsp Iniciar o jogo.</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">jogo.iniciar("Título", 640, 480, atualize, desenhe)</strong>.
+							</p>
+							<br>
+							<p><strong class="">distância(x1, y1, x2, y2: Real): Real</strong><br>
+								<span class="cm">&nbsp Distância entre dois pontos (x1,y1) e (x2,y2).</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">Jogo.distância(10, 10, 20, 30)</strong>.
+							</p>
+							<br>
+							<p><strong class="">projeção_X(angulo: Real, módulo: Real): Real</strong><br>
+								<span class="cm">&nbsp Projeção do vetor dado pelo módulo e ângulo no eixo x.</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">dx = Jogo.projeção_X(30, 5)</strong>.
+							</p>
+							<br>
+							<p><strong class="">projeção_Y(angulo: Real, módulo: Real): Real</strong><br>
+								<span class="cm">&nbsp Projeção do vetor dado pelo módulo e ângulo no eixo y.</span><br>
+								<span class="cm">&nbsp Exemplo: </span><strong class="has-text-weight-semibold">dy = Jogo.projeção_Y(30, 5)</strong>.
+							</p>
+						</div>
+					</div>
+                    <div>
+                    <br>
+                    <h1 class="title is-2">Imagem</h1>
+                    <h1 class="subtitle is-6 is-italic">Permite carregar imagens de arquivos e exibir na tela.</h1>
+                    <div>
+                    <h1 class="subtitle is-5 has-text-weight-light">ATRIBUTOS:</h1>
+							<p><strong class="is-uppercase">largura: Inteiro</strong><br>
+								<span class="cm">&nbsp Largura da imagem</span><br>
+                            </p>
+							<br>
+							<p><strong class="is-uppercase">altura: Inteiro</strong><br>
+								<span class="cm">&nbsp Altura da imagem</span><br>
+							</p>
+							<br>
+                    </div>
+                    </div>
 				</div>
-			</div>
-		</div>
-		</div>
-		</div>
-		<div class="column block is-3 is-hidden-mobile fixed">
-			<div class="columns ">
-				<div class="column ">
+				<div class="column is-4 block is-hidden-mobile fixed">
 					<aside class="menu">
 						<p class="button">
 							<span>BIBLIOTECA: JERIMUM</span>
@@ -138,8 +205,6 @@ jogo.iniciar("Título", 640, 480, atualize, desenhe, 60)
 					</aside>
 				</div>
 			</div>
-		</div>
-		</div>
 		</div>
 	</section>
 	<footer class="footer">
