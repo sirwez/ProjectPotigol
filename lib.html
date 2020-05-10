@@ -158,6 +158,41 @@
 							</p>
 							<br>
                     </div>
+                    <div>
+                    <h1 class="subtitle is-5 has-text-weight-light">MÉTODOS:</h1>
+							<p><strong class="">Imagem(caminho: Texto)</strong><br>
+								<span class="cm">&nbsp Construtor</span><br>
+                                <span class="cm">&nbsp Exemplo: <strong>img = Imagem("jogador.png")</strong></span><br>
+                            </p>
+							<br>
+							<p><strong class="">desenhe(x, y: Real, z: Inteiro, angulo: Real = 0.0, scala_X, scala_Y: Real = 1.0)</strong><br>
+								<span class="cm">&nbsp Desenha uma imagem na tela tendo (x, y) como ponto superior esquerdo.</span><br>
+                                <span class="cm">&nbsp Exemplo: <strong>img.desenhe(20, 30, 1)</strong></span><br>
+							</p>
+							<br>
+                            <p><strong class="">desenhe_centralizado(x, y: Real, z: Inteiro, angulo: Real = 0.0, scala_Y: Real = 1.0)</strong><br>
+								<span class="cm">&nbsp Desenha uma imagem na tela tendo (x, y) como ponto central.</span><br>
+                                <span class="cm">&nbsp Exemplo: <strong>img.desenhe_centralizado(20, 30, 1)</strong></span><br>
+							</p>
+							<br>
+                            <p><strong class="">fatie(x, y: Inteiro): Lista[Imagem]</strong><br>
+								<span class="cm">&nbsp Recorta uma imagem em imagens menores formando uma lista.</span><br>
+                                <span class="cm">&nbsp Exemplo: <strong>imagens = Imagem("sprite.png").fatie(30, 30)</strong></span><br>
+							</p>
+							<br>
+                    </div>
+                    </div>
+                 <div>
+                    <br>
+                    <h1 class="title is-2">TECLADO</h1>
+                    <h1 class="subtitle is-6 is-italic">Verifica se alguma tecla está pressionada.</h1>
+                    <div>
+                    <h1 class="subtitle is-5 has-text-weight-light">ATRIBUTOS:</h1>
+                    <p><span><strong>TECLA_A, TECLA_B, TECLA_C, TECLA_D, TECLA_E, TECLA_F, TECLA_G, TECLA_H, TECLA_I, TECLA_J, TECLA_K, TECLA_L, TECLA_M, TECLA_N, TECLA_O, TECLA_P, TECLA_Q, TECLA_R, TECLA_S, TECLA_T, TECLA_U, TECLA_V, TECLA_W, TECLA_X, TECLA_Y, TECLA_Z TECLA_0, TECLA_1, TECLA_2, TECLA_3, TECLA_4, TECLA_5, TECLA_6, TECLA_7, TECLA_8, TECLA_9 TECLA_ESPAÇO, TECLA_ENTER, TECLA_PARA_CIMA, TECLA_PARA_BAIXO, TECLA_PARA_ESQUERDA, TECLA_PARA_DIREITA: Lógico</strong></span><br>
+                        <span class="cm">&nbsp Indica se uma tecla específica foi pressionada.</span><br>
+                        <span class="cm">&nbsp Exemplo: <strong>se Teclado.TECLA_PARA_DIREITA então x := x + 1 fim</strong></span><br>
+                    </p>
+                    </div>
                     </div>
 				</div>
 				<div class="column is-4 block is-hidden-mobile fixed">
